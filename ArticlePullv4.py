@@ -59,6 +59,10 @@ while userInput != "":
 while("" in links):
     links.remove("")
 
+if not links:
+    print("No links were provided. Stopping the script.")
+    exit()
+
 
 # TEMP skipped for debugging
 # url = 'https://www.southerntidings.com/gsc/first-fully-digital-church-in-southern-union-launches/'
