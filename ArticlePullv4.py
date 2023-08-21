@@ -2,17 +2,6 @@
 
 # This script is used to pull article information into a text file saved into the Desktop of the running user.
 
-#DEBUG CODE-----START
-# import debugpy
-
-# # 5678 is the default attach port in the VS Code debug configurations. Unless a host and port are specified, host defaults to 127.0.0.1
-# debugpy.listen(5678)
-# print("Waiting for debugger attach")
-# debugpy.wait_for_client()
-# print('break on this line')
-
-#DEBUG CODE-----END
-
 from datetime import datetime
 import os
 from pathlib import Path
@@ -62,12 +51,6 @@ while("" in links):
 if not links:
     print("No links were provided. Stopping the script.")
     exit()
-
-
-# TEMP skipped for debugging
-# url = 'https://www.southerntidings.com/gsc/first-fully-digital-church-in-southern-union-launches/'
-# url = 'https://www.kytn.net/news/kytn-adventurer-camporee-sees-a-40-attendance-increase'
-# url = input("\nPaste the article URL here:\n")
 
 
 def DownloadandSave(url,count):
